@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta property="og:title" content="The Weather Search" />
+	<meta property="og:url" content="http://perso-etudiant.univ-mlv.fr/~pcharles/ens/web1/projet/" />
+	<meta property="og:image" content="http://perso-etudiant.univ-mlv.fr/~pcharles/ens/web1/projet/img/bg/autumn.jpg" />
+	<meta property="og:description" content="The Weather Search" />
+	<meta property="og:site_name" content="The Weather Search" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="stylesheet" href="css/about.css">
+	<script src="js/modernizr.js"></script>
+	
+	<link rel="stylesheet" href="src/css/swipebox.css">
+	  	
+  	<title>The Weather Search</title>
+</head>
+<body>
+	<div class="the-weather-search-container">
+		<ul>
+			<li>
+				<div class="cd-title">
+					<h2>Description</h2>
+					<p>Qu'est ce que c'est?</p>
+				</div>
+
+				<div class="cd-project-info">
+					<img src="img/wind-rapid.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Informations meteo rapides d'acces</h2>
+					<p>The Weather Search est un site destiné à vous donner des informations précises sur la méteo.</p>
+					
+					<img src="img/dynamic.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Un design anime</h2>
+					<p>Cependant, il mêle information de qualité et design. Ce site propose une jolie interface avec des animations correspondant aux saisons et au temps qu'il fait dehors.</p>
+					
+					<img src="img/map-marker.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Geolocalisation</h2>	
+					<p>Dès le chargement de la page, le site vous géolocalise pour vous donner des informations sur le temps du lieu où vous vous trouvez.</p>
+					
+					<img src="img/idea.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Recherche d'information</h2>	
+					<p>Ensuite, il est disponible deux barres de recherches. La première permet de rentrer le nom d'une ville dont vous souhaiterez savoir le temps qu'il y fait. La seconde barre vous propose une recherche Google.</p>
+					
+					<img src="img/favorite.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Page d'accueil</h2>	
+					<p>Ce site peut-être utilisé comme page d'accueil lors de l'ouverture de votre navigateur afin d'être directement informé sur la météo, de faire une recherche Google au plus vite, tout en ayant une page d'accueil plaisante à regarder.</p>
+					
+					<hr class="footer_info">
+					<a href="index.html" class="footer-link">Retour à la page d'accueil</a>
+				</div>
+			</li>
+
+			<li>
+				<div class="cd-title">
+					<h2>Fonctionnement</h2>
+					<p>Comment ça fonctionne?</p>
+				</div>
+
+				<div class="cd-project-info">
+					<div style="max-width:200px; margin:0 auto; height:60px; margin-bottom: 50px;">
+						<img src="img/logo-chrome.svg" style="display: block; margin-left: auto; margin-right: auto; float:left;" width="60" height="60">
+						<img src="img/logo-openweathermap.svg" style="display: block; margin-left: auto; margin-right: auto; float:right;" width="60" height="60">
+					</div>
+					<p>The Weather Search est relié à deux API. En ce qui concerne la géolocalisation, le site fait appel à l'API de Google. Concernant les informations sur la météo, le site s'appuie sur l'API Open Weather Map.</p>
+				
+					<h3>Une API pour les développeurs</h3>
+					<p>Open Weather Map est une API simple et claire qui donne accès à des données actuelles, des prévisions météorologiques à 16 jours, et les données historiques pour 200 000 villes en utilisant des appels JSON, XML et HTML. Ici, le site utilise les appels JSON. Cette variété d'informations est très utile puisque le site a besoin d'un maximum d'information pour que l'animation se créée. Cette API a aussi été sélectionnée car c'est l'une des seules gratuites et aussi complète sur le marché. Cependant, donnant des informations en anglais, nous avons sur faire en sorte de traduire et de convertir dans les mesures françaises.
+					
+					<h3>La météo dans votre ville</h3>
+					<p>L'API permet d'obtenir les prévisions météorologiques et actuelle pour votre ville! Celle-ci propose aussi des stats utiles et des graphiques,cependant ces fonctions de l'API n'ont pas été utilisées pour ce projet.</p>
+					
+					<h3>Une technologie précise</h3>
+					<p>L'API est donc développée de façon hautement précise, qui propose des informations météorologiques à long terme et à court terme, au niveau régional, national et mondial. Ici, seul les informations météorologiques à court terme et surtout en direct sont utilisées. Open Weather Map suit les conditions météorologiques changeantes et met à jour les données météorologiques sur notre site à la fois et l'API rapidement.</p>
+					
+					
+					<img src="img/map-marker.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>La geolocalisation</h2>
+					<p>Google propose le possibilité, sous acceptation de l'utilisateur, de récupérer les données géolocalisation de l'endroit où l'utilisateur se connecte au site. La latitude et la longitude sont deux données essentielles que le site utilisera et passera en paramètre à l'API Open Weather Map.</p>
+					
+					<img src="img/search-city.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>La recherche d'une ville</h2>
+					<p>Une barre de recherche fait appel à code JavaScript qui va envoyer la ville rentrée en paramètre à l'API Open Weather Map, pour que cette dernière renvoie les informations correspondantes à cette ville, de la même façon que la géolocalisation</p>
+					
+					<img src="img/design.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Le design et animation</h2>
+					<p>Le design du site a été choisi de façon à qu'il soit ergonomique, simple mais affichant toutes les informations souhaitées. Les animations se font en fonction du temps qu'il fait : ciel dégagé, nuageux, pluie, neige, intempéries, etc. La Google Map quant à elle est automatiquement rafraîchi via un le script JavaScript</p>
+					
+					<img src="img/search-google.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>La recherche Google</h2>
+					<p>Une barre de recherche est aussi proposée afin que l'utilisateur puisse faire une recherche Google rapidement et facilement. </p>
+					
+					<hr class="footer_info">
+					<a href="index.html" class="footer-link">Retour à la page d'accueil</a>
+				</div>
+			</li>
+
+			<li>
+				<div class="cd-title">
+					<h2>Design</h2>
+					<p>Les différents design</p>
+				</div>
+
+				<div class="cd-project-info">
+				
+					<img src="img/design-bg.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Un design unique</h2>
+					<p>The Weather Search vous propose un design simple, plaisant et répondant aux tendances actuelles.</p>
+					
+					<img src="img/night-day.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Le jour et la nuit</h2>
+					<p>En fonction de l'heure où vous vous rendez sur le site, celui-ci affichera deux design différents : un pour le jour, un pour la nuit.</p>
+					<div class="img-gallery2">
+						<a rel="gallery-4" href="img/screenshot/day/day.png" class="swipebox" title="Day">
+							<img src="img/screenshot/day/day.png" alt="image">
+						</a>
+						<a rel="gallery-4" href="img/screenshot/day/night.png" class="swipebox" title="Night">
+							<img src="img/screenshot/day/night.png" alt="image">
+						</a>					
+					</div>
+					
+					
+					<img src="img/weather-rain.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Le temps</h2>
+					<p>En fonction du temps, le design du site s'adapte. En effet, que le temps soit dégagé ou nuageux, qu'il pleut ou qu'il neige, des animations sont affichées.</p>
+					
+					<div class="weather-map-gallery-image">
+						<a rel="gallery-1" href="img/screenshot/weather/clear.png" class="swipebox" title="Dégagé">
+							<img src="img/screenshot/weather/clear.png" alt="image" >
+						</a>
+						<a rel="gallery-1" href="img/screenshot/weather/clouds.png" class="swipebox" title="Nuageux">
+							<img src="img/screenshot/weather/clouds.png" alt="image">
+						</a>
+						<a rel="gallery-1" href="img/screenshot/weather/rain.png" class="swipebox" title="Pluvieux">
+							<img src="img/screenshot/weather/rain.png" alt="image">
+						</a>
+						<a rel="gallery-1" href="img/screenshot/weather/snow.png" class="swipebox" title="Enneigé">
+							<img src="img/screenshot/weather/snow.png" alt="image">
+						</a>
+						
+					</div>
+					
+					<img src="img/temperature.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>Les saisons</h2>
+					<p>En fonction de la saison dans laquelle vous vous trouvez, un icon caractérisant s'affiche sur l'écran.</p>
+					
+					<div class="weather-map-gallery-image">
+						<a rel="gallery-2" href="img/screenshot/season/summer.png" class="swipebox" title="Summer">
+							<img src="img/screenshot/season/summer.png" alt="image" >
+						</a>
+						<a rel="gallery-2" href="img/screenshot/season/autumn.png" class="swipebox" title="Autumn">
+							<img src="img/screenshot/season/autumn.png" alt="image">
+						</a>
+						<a rel="gallery-2" href="img/screenshot/season/winter.png" class="swipebox" title="Winter">
+							<img src="img/screenshot/season/winter.png" alt="image">
+						</a>
+						<a rel="gallery-2" href="img/screenshot/season/spring.png" class="swipebox" title="Spring">
+							<img src="img/screenshot/season/spring.png" alt="image">
+						</a>
+						
+					</div>
+					
+					<img src="img/map.svg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;" width="50" height="50">
+					<h2>La carte Google Map</h2>
+					<p>The Weather Search vous propose différents </p>
+					
+					<div class="img-gallery">
+						<a rel="gallery-3" href="img/screenshot/map/google-map.png" class="swipebox" title="Google Map">
+							<img src="img/screenshot/map/google-map.png" alt="image">
+						</a>					
+					</div>
+					
+					<hr class="footer_info">
+					<a href="index.html" class="footer-link">Retour à la page d'accueil</a>
+				</div>
+			</li>
+
+			<li>
+				<div class="cd-title">
+					<h2>Contact</h2>
+					<p>Contactez-nous!</p>
+				</div>
+
+				<div class="cd-project-info">
+					<div class="all-people">
+						<div class="people">
+							<img src="img/people/jeremie.jpg">
+							<h2>Jeremie QUESNEL</h2>
+							<input id="ask-info-jerem" class="ask-info" value="" type="submit"</input>
+							<p id="info-jerem"></p>
+						</div>
+						<div class="people">
+							<img src="img/people/pierre.jpg">
+							<h2>Pierre CHARLES</h2>
+							<input id="ask-info-pedro" class="ask-info" value="" type="submit"</input>
+							<p id="info-pedro"></p>
+						</div>
+					</div>
+					
+					<hr class="footer_info">
+					<a href="index.html" class="footer-link">Retour à la page d'accueil</a>
+				</div>
+			</li>
+		</ul>
+		<a href="#0" class="cd-close">Close</a>
+		<a href="#0" class="cd-scroll">Scroll</a>
+	</div> <!-- .project-container -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="lib/ios-orientationchange-fix.js"></script>
+	<script src="lib/jquery-2.1.0.min.js"></script>
+	<script src="src/js/jquery.swipebox.js"></script>
+	<script type="text/javascript">
+	$( document ).ready(function() {
+
+			/* Basic Gallery */
+			$( '.swipebox' ).swipebox();
+			
+			/* Video */
+			$( '.swipebox-video' ).swipebox();
+
+			/* Dynamic Gallery */
+			$( '#gallery' ).click( function( e ) {
+				e.preventDefault();
+				$.swipebox( [
+					{ href : 'http://swipebox.csag.co/mages/image-1.jpg', title : 'My Caption' },
+					{ href : 'http://swipebox.csag.co/images/image-2.jpg', title : 'My Second Caption' }
+				] );
+			} );
+
+      });
+	</script>
+	<script>
+	$( document ).ready(function() {
+	
+		$("#ask-info-pedro").click(function(event){
+			event.preventDefault();
+			$.ajax({
+				type: "GET",
+				url: "ajax/msg-pierre.txt",
+				success: function(msg){
+					$("#info-pedro").html(msg);
+				}
+			});
+		});
+		
+		$("#ask-info-jerem").click(function(event){
+			event.preventDefault();
+			$.ajax({
+				type: "GET",
+				url: "ajax/msg-jeremie.txt",
+				success: function(msg){
+					$("#info-jerem").html(msg);
+				}
+			});
+		});
+		
+	});
+	</script>
+</body>
+</html>
